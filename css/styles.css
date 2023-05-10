@@ -1,15 +1,31 @@
 /* Global */
-body {
+body, html {
   font-family: 'Andika', sans-serif;
   margin: 0;
   padding: 0;
+  height: 100%;
 
+}
+
+.page-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  padding: 20px;
+  flex: 1;
+  text-align: center;
+  
 }
 
 header {
   background-color: #333;
   color: #fff;
   padding: 10px;
+  position: sticky;
+  top: 0;
 }
 
 nav ul {
@@ -28,10 +44,6 @@ nav ul li a {
   text-decoration: none;
 }
 
-main {
-  padding: 20px;
-}
-
 /* Homepage */
 #carousel div {
   background-color: #f2f2f2;
@@ -47,6 +59,7 @@ main {
   border: none;
   cursor: pointer;
 }
+
 
 /* Contact Page */
 #contact {
@@ -125,6 +138,17 @@ main {
 .blog-item img {
   cursor: pointer;
 }
+
+/* Footer*/
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+
+
 
 /* Responsive */
 @media (max-width: 768px) {

@@ -50,3 +50,15 @@ loadMoreBtn.style.color = '#fff';
 loadMoreBtn.style.border = 'none';
 loadMoreBtn.style.cursor = 'pointer';
 
+// Button Hover
+
+loadMoreBtn.style.transition = 'background-color 0.3s';
+
+loadMoreBtn.addEventListener('mouseover', function() {
+  loadMoreBtn.style.backgroundColor = '#551A8B';
+});
+
+loadMoreBtn.addEventListener('mouseout', function() {
+  loadMoreBtn.style.backgroundColor = '#333';
+});
+

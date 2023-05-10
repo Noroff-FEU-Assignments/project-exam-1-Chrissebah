@@ -9,6 +9,9 @@ fetch(`https://projectexam.onechrissebah.no/wp-json/wp/v2/posts/${blogId}?_embed
     const featuredMedia = blog._embedded && blog._embedded['wp:featuredmedia'] ? blog._embedded['wp:featuredmedia'][0] : null;
     const imageUrl = featuredMedia ? featuredMedia.source_url : 'placeholder.jpg';
 
+    // Dynamic Title
+    document.title = `${blog.title.rendered} | My Blog`;
+
     const blogItem = document.createElement('div');
     blogItem.classList.add('blog-item');
     blogItem.innerHTML = `
@@ -23,17 +26,17 @@ fetch(`https://projectexam.onechrissebah.no/wp-json/wp/v2/posts/${blogId}?_embed
     console.error('Error fetching blog details:', error);
   });
 
-  function openModal(img) {
-    const modal = document.getElementById('myModal');
-    const modalImg = document.getElementById('modalImg');
-    modalImg.src = img.src;
-    modal.style.display = 'block';
-    modal.onclick = function(event) {
-      if (event.target === modal) {
-        closeModal();
-      }
-    };
-  }
+function openModal(img) {
+  const modal = document.getElementById('myModal');
+  const modalImg = document.getElementById('modalImg');
+  modalImg.src = img.src;
+  modal.style.display = 'block';
+  modal.onclick = function(event) {
+    if (event.target === modal) {
+      closeModal();
+    }
+  };
+}
 
 function closeModal() {
   const modal = document.getElementById('myModal');
