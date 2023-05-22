@@ -4,60 +4,64 @@
   <title>Homepage</title>
   <link rel="stylesheet" type="text/css" href="css/styles.css">
   <meta charset="utf-8"/>
-    <meta name="viewport" content="width device-width, initial-scale=1.0" />
-    <meta name="description" content="This is the homepage of the blog">
-    <meta name="keywords" content="HTML, CSS, Javascript">
-    <meta name="author" content="Christian Sellie Grøtan">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Andika&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="This is the homepage of the blog">
+  <meta name="keywords" content="HTML, CSS, Javascript">
+  <meta name="author" content="Christian Sellie Grøtan">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Andika&display=swap" rel="stylesheet">
 
-    <!-- Hotjar Tracking Code for Project Exam 1 -->
-<script>
-  (function(h,o,t,j,a,r){
-      h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-      h._hjSettings={hjid:3486597,hjsv:6};
-      a=o.getElementsByTagName('head')[0];
-      r=o.createElement('script');r.async=1;
-      r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-      a.appendChild(r);
-  })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-</script>
+  <!-- Hotjar Tracking Code for Project Exam 1 -->
+  <script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:3486597,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+  </script>
 
-  </head>
+  <style>
+    #carousel {
+      width: 80%;
+      margin: 0 auto;
+    }
+  </style>
+</head>
 <body>
   <div class="page-container">
-  <header>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="blogs.html">Blogs</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="blogs.html">Blogs</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
 
-  <main>
-    <section id="home-page">
-      <h1>Welcome to the Gamer Central Blog!</h1>
-      <p>Here we have all the top blog posts posted by our analyts and the ones posted by you at home.</p>
-      <img src="img/Backgroud image.jpg" alt="homepage image" style="max-width: 70%; max-height: 350px;">
-    </section>
+    <main>
+      <section id="home-page">
+        <h1>Welcome to the Gamer Central Blog!</h1>
+        <p>Here we have all the top blog posts posted by our analyts and the ones posted by you at home.</p>
+        <img src="img/Backgroud image.jpg" alt="homepage image" style="max-width: 70%; max-height: 350px;">
+      </section>
 
-    <section id="home">
-      <h1>Latest Posts</h1>
-      <div id="carousel"></div>
-      <button id="prevBtn">Previous</button>
-      <button id="nextBtn">Next</button>
-    </section>
-  </main>
+      <section id="home">
+        <h1>Latest Posts</h1>
+        <div id="carousel"></div>
+        <button id="prevBtn">Previous</button>
+        <button id="nextBtn">Next</button>
+      </section>
+    </main>
 
-  <script src="js/carousel.js"></script>
+    <script src="js/carousel.js"></script>
   </div>
-</body>
 
-<footer>
-  <p>&copy; Blog by Christian 2023. All rights reserved.</p>
-</footer>
-
-</html>
+  <footer>
+    <p>&copy; Blog by Christian 2023. All rights
