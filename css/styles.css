@@ -4,22 +4,18 @@ body, html {
   margin: 0;
   padding: 0;
   height: 100%;
-
 }
 
 .page-container {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  
-
 }
 
 main {
   padding: 20px;
   flex: 1;
   text-align: center;
-  
 }
 
 header {
@@ -93,6 +89,7 @@ nav ul li a {
   width: 100%;
   padding: 5px;
   font-size: 16px;
+  resize: vertical;
 }
 
 #contactForm button[type="submit"] {
@@ -109,8 +106,6 @@ nav ul li a {
 #contactForm button[type="submit"]:hover {
   background-color: #551A8B;
 }
-
-
 
 /* CSS for modal */
 .modal {
@@ -155,7 +150,7 @@ nav ul li a {
   cursor: pointer;
 }
 
-/* Footer*/
+/* Footer */
 footer {
   background-color: #333;
   color: #fff;
@@ -164,11 +159,9 @@ footer {
 }
 
 /* Blogs */
-
 .blog-item {
   margin: 0 auto 20px;
   text-align: center;
-  
 }
 
 .blog-title {
@@ -182,10 +175,10 @@ footer {
   overflow: hidden;
   border: 1px solid #ccc;
   padding: 10px;
-  width: 60%; 
-  margin: 0 auto; 
-  box-sizing: border-box; 
-  text-align: center; 
+  width: 60%;
+  margin: 0 auto;
+  box-sizing: border-box;
+  text-align: center;
 }
 
 .blog-description p {
@@ -218,10 +211,6 @@ footer {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
-
-
-
-
 /* Responsive */
 @media (max-width: 768px) {
   header {
@@ -249,5 +238,8 @@ footer {
   #contact {
     max-width: 400px;
   }
-}
 
+  #contactForm textarea {
+    resize: vertical;
+  }
+}
