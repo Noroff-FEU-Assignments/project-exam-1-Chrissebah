@@ -24,6 +24,8 @@ fetch('https://projectexam.onechrissebah.no/wp-json/wp/v2/posts?_embed&per_page=
         `;
         carousel.appendChild(item);
       }
+      
+      updatePageCounter();
     }
 
     function showPreviousItems() {
@@ -40,6 +42,11 @@ fetch('https://projectexam.onechrissebah.no/wp-json/wp/v2/posts?_embed&per_page=
         currentPage = 0;
       }
       showItems();
+    }
+
+    function updatePageCounter() {
+      const pageCounter = document.getElementById('pageCounter');
+      pageCounter.innerText = `Page ${currentPage + 1} of ${totalPages}`;
     }
 
     showItems();
