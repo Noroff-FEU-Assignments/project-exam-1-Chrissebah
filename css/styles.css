@@ -247,7 +247,7 @@ footer {
     box-sizing: border-box;
     margin-left: auto;
     margin-right: auto;
-    overflow-x: hidden; /* Prevent horizontal scrolling */
+    overflow-x: hidden; 
   }
 
   #contactForm {
