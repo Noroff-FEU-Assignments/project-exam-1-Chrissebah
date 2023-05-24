@@ -49,6 +49,7 @@ nav ul li a {
   margin-bottom: 10px;
 }
 
+
 #prevBtn,
 #nextBtn {
   padding: 10px 20px;
@@ -235,11 +236,22 @@ footer {
     font-size: 14px;
   }
 
-  #contact {
-    max-width: 400px;
+  .page-container {
+    overflow-x: hidden;
   }
 
-  #contactForm textarea {
-    resize: vertical;
+  #contact {
+    max-width: 100%;
+    width: auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+  }
+
+  #contactForm {
+    max-width: 100%;
   }
 }
+
