@@ -1,67 +1,40 @@
-## Project Exam 1
+Project Exam 1 </br>
 
-## Goal
+My first year exam project.
 
-To put into practice the skills learned over your first year of studies.
+Description:
+This is my first exam project. The task is to make a blogpage out of a prototype made in Figma.
+The website needs to be responsive on different screen sizes, WCAG and SEO compatible. It needs to display items on the page using javascript to pull from an API on a wordpress site.
 
-## Brief
-You have been tasked with creating a blog site. You can choose the design and topics covered on the blog, but it should have at least the following pages:
--	Home page
--	About page
--	List of blog posts
--	Blog post specific pages
--	Contact page.
+Built With
 
-### Home Page
-The home page should have a ‘Latest Posts’ section which uses a carousel (slider) for users to click to view more posts. For example, by default the user can see four posts, then they can click an arrow on the right to view the next four posts, and click it again to view the next four posts. The user can also click back to view results they had previously seen. This must be implemented for desktop at least, but if you want a simpler layout for mobile, you can change it from being in a carousel.
+![image](https://github.com/Chrissebah/SemesterProject-1/assets/19626783/52b602f7-a7fe-4bbb-8167-aa1516d2037d)
+![image](https://github.com/Chrissebah/SemesterProject-1/assets/19626783/14208c76-3b50-4fba-82e4-a20e2824f50b)
+![image](https://github.com/Chrissebah/SemesterProject-1/assets/19626783/2f9db9f0-3997-453b-ab65-d6bdcadca8d6)
+![image](https://github.com/Chrissebah/SemesterProject-1/assets/19626783/98aea41e-7934-4cb2-8071-6a7ab7f3aed9)
 
-### Blog Page
+Deployed Website
+https://willowy-longma-03b84d.netlify.app/index.html
 
-The blog posts page should show the first 10 blogs, and the user should click to view more results which then show underneath the first 10 blogs.
+Getting Started
+Installing
 
-### Blog Specific Page
+Clone the repo:
+git clone [https://github.com/Noroff-FEU-Assignments/project-exam-1-Chrissebah.git]
 
-The content of the blog specific page should be dynamically built using a query string parameter based on whatever link the user clicked. The title of the blog specific page should change based on the blog that has been clicked on e.g. “My Blog | An Article I Wrote”.
+Contributing
+There are no contributions to this project.
 
-If images on the blog post page are clicked, a modal should appear giving the user a bigger view of that image. Clicking outside the image should hide the modal.
+Contact
 
-### Contact page
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/christian-g-33443213b/)
 
-Create a contact us page, there should be 4 textboxes on this page.
--	Name (Should be more than 5 characters long)
--	Email address (Must be a valid email address)
--	Subject (Should be more than 15 characters long)
--	Message content (Should be more than 25 characters long)
+Acknowledgments
+Christian Sellie Grøtan - Creator/Owner
 
-Please use JavaScript for validation, show error messages if the values in the textboxes do not meet the requirements.
+This website was helpful when I was looking to create a modal.
+https://dev.to/salehmubashar/create-an-image-modal-with-javascript-2lf3
 
-### WordPress
-
-The content for your website will be stored on a WordPress installation used as a Headless CMS. It’s important to note that we are only using WordPress to provide an API and add content for the blog. You should not submit a link to a WordPress site, but build your website using HTML, CSS and JavaScript and making a call to the WordPress REST API to fetch the data. 
-
-The project has two aspects:
--	API from your WordPress installation
--	Your website built with HTML, CSS and JavaScript
-
-You will need to add at least 12 blogs for your website. You can use lorem ipsum for paragraphs if you need, but headings, images etc. should all make sense.
-
-Note that this is an exam, and therefore tutor support will be limited as per the study plan.
-
-## Level 1 Process
-
-1.	Decide on the theme for the blog you’re going to make
-2.	Create a prototype of the website
-3.	Install WordPress on your web host and add the blogs on the admin panel. 
-4.	Use the GitHub repo created by GitHub Classroom for your files and deploy to Netlify
-5.	Build your website using HTML, CSS and JavaScript making a call to the WordPress REST API to fetch your data.
-6.	Install Hotjar on your website.
-7.	Ask users to test your website, and adjust based on their feedback and any insights from Hotjar.
-8.	Write a report documenting your project (template provided in this repository).
-9.	Submit your report as a PDF and a link to both your Netlify deployment and your GitHub repo.
- 
-## Level 2 Process (optional)
-
-1.	You can try adding a sort, filter, or search to the blog posts page allowing users to find the blog post more easily that they’re looking for. 
-2.	Post the data from the contact form to WordPress so you have the details saved.
-3.	Allow users to submit comments on a blog post, and post this data to WordPress
-
+I used this website when creating my carousel, tho I ended up opting not use it but it was 
+good for inspiration.
+https://medium.com/allenhwkim/how-to-build-a-carousel-in-pure-javascript98d758a18811
