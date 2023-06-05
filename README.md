@@ -16,12 +16,6 @@ The website needs to be responsive on different screen sizes, WCAG and SEO compa
 ## Deployed Website
 https://willowy-longma-03b84d.netlify.app/index.html
 
-### Getting Started
-Installing
-
-### Clone the repo:
-git clone [https://github.com/Noroff-FEU-Assignments/project-exam-1-Chrissebah.git]
-
 ### Contributing
 There are no contributions to this project.
 
